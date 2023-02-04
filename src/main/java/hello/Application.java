@@ -17,7 +17,7 @@ public class Application {
   public String index() {
     String revision = System.getenv("K_REVISION");
     if (revision == null) {
-      revision = "빌드번호: 1";
+      revision = "빌드번호: 2";
     }
 
     return String.format("** AWS빈즈톡 테스트 코드(w/Springboot) ===> %s", revision);
